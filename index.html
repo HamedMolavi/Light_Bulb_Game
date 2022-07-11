@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Play a game</title>
+</head>
+
+<body class="position-relative">
+    <div id="alert" class="position-absolute top-0 alert alert-primary" role="alert">
+        In this game, you can change the light to on or off, and after each second I
+        will check the status of the light. Whenever you hit the "How many times?"
+        button, I will tell you how many times lights were changed in the end of a
+        second.
+    </div>
+    <div class="h-100 bg-dark d-flex justify-content-center align-items-center">
+        <div class="">
+            <button id="bulb" class="bg-transparent" onclick="hit()">
+                <img id="bulb-img" class="bg-transparent text-dark " src="./off.jpg" alt="Light" unselec>
+            </button>
+        </div>
+    </div>
+
+
+    <div id="lights" class="position-absolute top-50 start-50"></div>
+    <button class="position-absolute bottom-10 end-10 p-2 border" onclick="calc()">How many times?</button>
+    <script src="./main.js"></script>
+</body>
+
+</html>
